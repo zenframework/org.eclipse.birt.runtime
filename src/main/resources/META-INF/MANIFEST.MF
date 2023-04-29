@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Bundle-Version: 4.8.0
+Bundle-Name: BIRT Runtime SDK
+Bundle-SymbolicName: org.eclipse.birt.runtime
+Bundle-Vendor: Eclipse.org
+
