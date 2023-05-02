@@ -305,7 +305,10 @@
 								<source>src/main/org.eclipse.birt.report.model/</source>
 								<source>src/main/org.eclipse.birt.report.data.adapter/</source>
 								<source>src/main/org.eclipse.birt.report.engine/</source>
+								<source>src/main/org.eclipse.birt.report.engine.odf/</source>
+								<source>src/main/org.eclipse.birt.report.engine.emitter.odt/</source>
 								<source>src/main/org.eclipse.birt.report.engine.emitter.pdf/</source>
+								<source>src/main/org.eclipse.birt.report.engine.emitter.wpml/</source>
 								<source>src/main/org.eclipse.birt.report.engine.script.javascript/</source>
 								<source>src/main/uk.co.spudsoft.birt.emitters.excel/</source>
 							</sources>
