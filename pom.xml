@@ -1,9 +1,10 @@
 <project>
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.eclipse.birt.runtime</groupId>
-	<artifactId>org.eclipse.birt.runtime</artifactId>
-	<version>4.8.0</version>
+	<groupId>org.zenframework.z8.dependencies</groupId>
+	<artifactId>z8-dependencies-birt</artifactId>
+	<version>3.5</version>
+	<name>Zenframework Z8 Dependencies - Birt</name>
 
 	<properties>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -12,254 +13,145 @@
 
 	<repositories>
 		<repository>
-			<id>openmindonline</id>
-			<name>openmindonline</name>
-			<url>https://repository.openmindonline.it/</url>
-		</repository>
-		<repository>
-			<id>sourceforge</id>
-			<name>sourceforge</name>
-			<url>http://logicaldoc.sourceforge.net/maven/</url>
+			<id>revoltsoft</id>
+			<name>revoltsoft</name>
+			<url>https://mvn.revoltsoft.ru/</url>
 		</repository>
 	</repositories>
 
 	<dependencies>
 		<dependency>
-			<groupId>commons-cli</groupId>
-			<artifactId>commons-cli</artifactId>
-			<version>1.4</version>
+			<groupId>org.zenframework.z8.dependencies.commons</groupId>
+			<artifactId>commons-cli-1.4</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>commons-codec</groupId>
-			<artifactId>commons-codec</artifactId>
-			<version>1.15</version>
+			<groupId>org.zenframework.z8.dependencies.commons</groupId>
+			<artifactId>commons-codec-1.15</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
+			<groupId>org.zenframework.z8.dependencies.servlet</groupId>
+			<artifactId>servlet-api-3.1.0</artifactId>
+			<version>${project.version}</version>
 			<scope>provided</scope>
 		</dependency>
 
 		<dependency>
-			<groupId>org.apache.batik</groupId>
-			<artifactId>org.apache.batik.css</artifactId>
-			<version>1.6.0-20081006</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.batik</groupId>
-					<artifactId>org.apache.batik.util</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.w3c.css</groupId>
-					<artifactId>org.w3c.css.sac</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.w3c.dom</groupId>
-					<artifactId>org.w3c.dom.svg</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.apache.batik.css_1.8.0.v20170214-1941</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.batik</groupId>
-			<artifactId>org.apache.batik.util</artifactId>
-			<version>1.6.0-20081006</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.batik</groupId>
-					<artifactId>org.apache.batik.util.gui</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.apache.batik.util_1.8.0.v20170214-1941</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.batik</groupId>
-			<artifactId>org.apache.batik.transcoder</artifactId>
-			<version>1.6.0-20081006</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.batik</groupId>
-					<artifactId>org.apache.batik.bridge</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.batik</groupId>
-					<artifactId>org.apache.batik.dom</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.batik</groupId>
-					<artifactId>org.apache.batik.dom.svg</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.batik</groupId>
-					<artifactId>org.apache.batik.ext.awt</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.batik</groupId>
-					<artifactId>org.apache.batik.svggen</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.batik</groupId>
-					<artifactId>org.apache.batik.util</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.batik</groupId>
-					<artifactId>org.apache.batik.xml</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.w3c.dom</groupId>
-					<artifactId>org.w3c.dom.svg</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.apache.batik.transcoder_1.8.0.v20170214-1941</artifactId>
+			<version>3.4-cert</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi</artifactId>
-			<version>3.16</version>
-			<exclusions>
-				<exclusion>
-					<groupId>commons-codec</groupId>
-					<artifactId>commons-codec</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>poi-3.16</artifactId>
+			<version>3.4-cert</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml</artifactId>
-			<version>3.16</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.apache.poi</groupId>
-					<artifactId>poi</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.apache.poi</groupId>
-					<artifactId>poi-ooxml-schemas</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>com.github.virtuald</groupId>
-					<artifactId>curvesapi</artifactId>
-				</exclusion>
-			</exclusions>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>poi-ooxml-3.16</artifactId>
+			<version>3.4-cert</version>
 		</dependency>
 		<dependency>
-			<groupId>org.apache.poi</groupId>
-			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>3.16</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>poi-ooxml-schemas-3.16</artifactId>
+			<version>3.4-cert</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>ooxml-schemas</artifactId>
 			<version>1.3</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.eclipse.platform</groupId>
-			<artifactId>org.eclipse.osgi</artifactId>
-			<version>3.12.100</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.platform</groupId>
-			<artifactId>org.eclipse.core.runtime</artifactId>
-			<version>3.13.0</version>
 			<exclusions>
 				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>org.eclipse.osgi</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>org.eclipse.equinox.app</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>org.eclipse.equinox.common</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>org.eclipse.equinox.registry</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>org.eclipse.equinox.preferences</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>org.eclipse.core.jobs</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>org.eclipse.core.contenttype</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.platform</groupId>
-			<artifactId>org.eclipse.equinox.common</artifactId>
-			<version>3.9.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.platform</groupId>
-			<artifactId>org.eclipse.equinox.registry</artifactId>
-			<version>3.7.0</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.eclipse.platform</groupId>
-					<artifactId>org.eclipse.equinox.common</artifactId>
+					<groupId>org.apache.xmlbeans</groupId>
+					<artifactId>xmlbeans</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
 
 		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.connectivity</artifactId>
-			<version>1.13.0.201603142002</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.eclipse.osgi_3.12.0.v20170512-1932</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.oda</artifactId>
-			<version>3.5.0.201603142002</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.eclipse.core.runtime_3.13.0.v20170207-1030</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.oda.consumer</artifactId>
-			<version>3.3.0.201603142002</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.eclipse.equinox.common_3.9.0.v20170207-1454</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.eclipse.datatools.connectivity.oda.profile</artifactId>
-			<version>3.3.0.201603142002</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.eclipse.equinox.registry_3.7.0.v20170222-1344</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 
 		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.mozilla.javascript</artifactId>
-			<version>1.7.5.v201504281450</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.eclipse.datatools.connectivity-1.13.0.201603142002</artifactId>
+			<version>3.4-cert</version>
 		</dependency>
 		<dependency>
-			<groupId>com.ibm.icu</groupId>
-			<artifactId>icu4j</artifactId>
-			<version>58.2</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.eclipse.datatools.connectivity.oda_3.5.0.201603142002</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>com.lowagie</groupId>
-			<artifactId>com.lowagie.text</artifactId>
-			<version>2.1.7.v201004222200</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.eclipse.datatools.connectivity.oda.consumer_3.3.0.201603142002</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.eclipse.birt.runtime</groupId>
-			<artifactId>org.w3c.css.sac</artifactId>
-			<version>1.3.1.v200903091627</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.eclipse.datatools.connectivity.oda.profile-3.3.0.201603142002</artifactId>
+			<version>3.4-cert</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.mozilla.javascript_1.7.5.v201504281450</artifactId>
+			<version>${project.version}</version>
 		</dependency>
 		<dependency>
-			<groupId>org.w3c</groupId>
-			<artifactId>flute</artifactId>
-			<version>1.2</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>com.ibm.icu_58.2.0.v20170418-1837</artifactId>
+			<version>3.5</version>
 		</dependency>
 		<dependency>
-			<groupId>net.sf.jtidy</groupId>
-			<artifactId>jtidy</artifactId>
-			<version>r938</version>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>com.lowagie.text_2.1.7.v201004222200</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>org.w3c.css.sac_1.3.1.v200903091627</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>flute-1.3</artifactId>
+			<version>3.4-cert</version>
+		</dependency>
+		<dependency>
+			<groupId>org.zenframework.z8.dependencies.birt</groupId>
+			<artifactId>jtidy-938</artifactId>
+			<version>3.4-cert</version>
 		</dependency>
 	</dependencies>
 
